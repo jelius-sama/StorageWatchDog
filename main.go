@@ -79,6 +79,12 @@ func main() {
 	lastUsage := 0.0
 	lastUsageTime := time.Now()
 
+	if err := testMail(*smtpHost, *smtpPort, *smtpUser, *smtpPass, *mailFrom, *mailTo); err != nil {
+		log.Fatalf("SMTP test failed: %v", err)
+	} else {
+		log.Println("SMTP test succeeded: test mail sent")
+	}
+
 	for {
 		usedPercent, err := getDiskUsage(*maildir)
 		if err != nil {
