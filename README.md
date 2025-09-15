@@ -14,6 +14,7 @@ A lightweight Go service that monitors disk usage of a mail storage directory (o
 ## Installation
 
 Clone the repository and build the binary or download any of the prebuilt binaries in the releases (Make sure it matches your OS and CPU architecture):
+
 **Note: Of the prebuilt binaries only Linux x86_64 is tested on actual hardware (AWS EC2 t2.micro instance)**
 
 ```bash
