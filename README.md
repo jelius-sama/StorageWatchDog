@@ -1,5 +1,7 @@
 # Storage Watchdog
 
+![StorageWatchDog](https://jelius.dev/assets/StorageWatchDog.png)
+
 A lightweight Go service that monitors disk usage of a mail storage directory (or any directory) and sends alert emails when usage thresholds are reached or when rapid growth is detected.  
 
 ## Features
